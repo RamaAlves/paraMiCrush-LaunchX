@@ -22,3 +22,14 @@ btnSi.addEventListener("click", function(e){
     const cancion = new Audio('./Assets/img_modo_hot.mp3')
     cancion.play()
 });
+
+divModoSexo.addEventListener("click", function(){
+    const img = document.createElement("img");
+    img.src ="./Assets/patricio_estrella.jpg";
+    divModoSexo.appendChild(img);
+})
+
+window.addEventListener("beforeunload", (event)=>{
+    event.preventDefault();
+    event.returnValue="";
+});
